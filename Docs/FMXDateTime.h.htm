@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html slick-uniqueid="3" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" dir="ltr" lang="en-gb"><head>
+<script src="FMXDateTime.h_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34699114-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	  <!-- base href="http://culturalservices.nl/index.php/filemaker-plug-ins/datetime-h" -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="productie, podiumkunsten, cultuur, cultuursector, copywriter, teksten, tekstschrijver, programmatoelichting, programmaboek, redactie, redacteur,planning, concerten, festivals, subsidieaanvragen, ensembles, Filemaker sdk headers, filemaker, sdk, filemaker api, api, plug-ins, plug-in, filemaker plug-in, filemaker plug-ins, ">
+  <meta name="author" content="Super User">
+  <meta name="description" content="Van der Linden Cultural Services levert diensten in de cultuursector. U kunt terecht voor teksten (zakelijk en informatief), productie en stage management in de podiumkunsten, Filemaker-database-development, transport, etc.">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>Van der Linden Cultural Services - FMXDateTime.h</title>
+  <link href="http://culturalservices.nl/index.php/component/search/?Itemid=538&amp;format=opensearch" rel="search" title="Search Van der Linden Cultural Services" type="application/opensearchdescription+xml">
+  <link rel="stylesheet" href="FMXDateTime.h_files/highslide.css" type="text/css">
+  <link rel="stylesheet" href="FMXDateTime.h_files/highslide-sitestyles.css" type="text/css">
+  <link rel="stylesheet" href="FMXDateTime.h_files/shCoreEclipse.css" type="text/css">
+  <link rel="stylesheet" href="FMXDateTime.h_files/shThemeEclipse.css" type="text/css">
+  <script src="FMXDateTime.h_files/mootools-core.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/core.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/caption.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/highslide-full.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/easing_equations.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/swfobject.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/en.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/highslide-sitesettings.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shCore.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushCpp.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushCSharp.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushCss.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushJava.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushJScript.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushPhp.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushPlain.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/shBrushXml.js" type="text/javascript"></script>
+  <script src="FMXDateTime.h_files/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+hs.graphicsDir = '/plugins/content/highslide/graphics/';
+
+			  SyntaxHighlighter.all();
+		 
+  </script>
+
+	<!-- The following line loads the template CSS file located in the template folder. -->
+	<link rel="stylesheet" href="FMXDateTime.h_files/template.css" type="text/css">
+<style type="text/css">.highslide img {cursor: url(/plugins/content/highslide/graphics/zmin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+<body id="page_bg">
+
+	<div class="top-menu">
+		<div id="sgmenu">
+			
+		</div>
+	</div>
+
+	<div id="mainwrap">
+	<div id="header">
+	
+
+	
+	
+		<div id="search">
+			<form action="/index.php/filemaker-plug-ins/datetime-h" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" size="20" value="Search..." onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" type="text">	<input name="task" value="search" type="hidden">
+	<input name="option" value="com_search" type="hidden">
+	<input name="Itemid" value="538" type="hidden">
+	</div>
+</form>
+
+		</div>
+	
+		<h1><a href="http://www.culturalservices.nl/index.php/filemaker-plug-ins">Filemaker Plug-Ins</a></h1>					
+		
+	</div>
+	<div id="wrapper">
+		<div id="content_m">
+						<div class="maincol_w_left">
+						
+									<div class="leftcol">
+								<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Filemaker</h3>
+											
+
+
+
+
+
+
+
+
+<ul class="menu">
+
+
+
+
+<li id="item-535" class="active parent"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins"><span>Filemaker SDK headers</span></a><ul><li id="item-532"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxextern-h"><span>FMXExtern.h</span></a></li><li id="item-537"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxclient-h"><span>FMXClient.h</span></a></li><li id="item-538" class="current active"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/datetime-h"><span>FMXDateTime.h</span></a></li><li id="item-539"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxfixpt-h"><span>FMXFixPt.h</span></a></li><li id="item-540"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtextstyle-h"><span>FMXTextStyle.h</span></a></li><li id="item-542"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtypes-h"><span>FMXTypes.h</span></a></li><li id="item-545"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxbinarydata-h"><span>FMXBinaryData.h</span></a></li><li id="item-546"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtext-h"><span>FMXText.h</span></a></li><li id="item-543"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxdata-h"><span>FMXData.h</span></a></li><li id="item-544"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxcalcengine-h"><span>FMXCalcEngine.h</span></a></li></ul></li><li id="item-536"><a href="http://culturalservices.nl/index.php/resources"><span>Resources</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	
+					</div>
+					
+						<div class="cont">
+							<div class="item-page">
+
+	<h2>
+			<a href="http://culturalservices.nl/index.php/filemaker-plug-ins/datetime-h">
+		FMXDateTime.h</a>
+		</h2>
+
+
+
+
+
+
+
+
+<p>The DateTime.h header contains function declarations and two class definitions in the <code class="brush:cpp">namespace fmx</code>. You use them&nbsp;to manipulate dates and times.</p>
+<p>The header start with three forward declarations of classes. These 
+are used in this header, but defined elsewhere in the SDK headers.</p>
+<div><div id="highlighter_175693" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">class</code> <code class="cpp plain">Locale; </code><code class="cpp comments">//defined in FMXTypes.h</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">class</code> <code class="cpp plain">Text; </code><code class="cpp comments">//defined in FMXText.h</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">class</code> <code class="cpp plain">FixPt; </code><code class="cpp comments">//defined in FMXFixPt</code></div></div></td></tr></tbody></table></div></div>
+<p>These forward declarations are followed by two classes that are 
+defined in this header. They are, so to speak, natively FMXDateTime.h 
+classes. The first class is <code class="brush:cpp">
+DateTime.</code></p>
+<div><div id="highlighter_770504" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">class</code> <code class="cpp plain">DateTime</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">public</code><code class="cpp plain">:</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">operator == ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;that ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">operator != ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;that ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">IsLeapYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 DayOfWeek () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 DayOfYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 WeekOfYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Now ();</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetDate ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;datetime );</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedDate ( int16 month, int16 day, int16 year );</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedDate ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;year, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;month, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;day );</code></div><div class="line number14 index13 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetDaysSinceEpoch ( int64 days );</code></div><div class="line number15 index14 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetTime ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;datetime );</code></div><div class="line number16 index15 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedTime ( int64 hour, int16 minute, int16 sec, int32 usec = 0 );</code></div><div class="line number17 index16 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedTime ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;hour, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;minute, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;sec );</code></div><div class="line number18 index17 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetSecsSinceMidnight ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;secs );</code></div><div class="line number19 index18 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetSecondsSinceEpoch ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;seconds );</code></div><div class="line number20 index19 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number21 index20 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetMonth () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number22 index21 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetDay () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number23 index22 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetDaysSinceEpoch () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number24 index23 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetHour () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number25 index24 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetMinute () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number26 index25 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetSec () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number27 index26 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetUSec () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number28 index27 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSeconds ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number29 index28 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSecsSinceMidnight ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number30 index29 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSecondsSinceEpoch ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number31 index30 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">operator </code><code class="cpp keyword bold">delete</code> <code class="cpp plain">( </code><code class="cpp keyword bold">void</code> <code class="cpp plain">*obj );</code></div><div class="line number32 index31 alt1"><code class="cpp keyword bold">private</code><code class="cpp plain">:</code></div><div class="line number33 index32 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">DateTime ();</code></div><div class="line number34 index33 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">DateTime ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;other );</code></div><div class="line number35 index34 alt2"><code class="cpp plain">};</code></div></div></td></tr></tbody></table></div></div>
+<p><code class="brush:cpp">DateTime</code>&nbsp;has 30 members:</p>
+<ol>
+<li>three operator functions</li>
+<li>25&nbsp;regular functions</li>
+<li>Two private constructors</li>
+</ol>
+<p>Because these functions are all used in the same way, we'll examine 
+the operator function and a normal function in detail. For the rest of 
+the functions the procedure is the same and only thier specifics are 
+discussed. The operator functions are the following members:</p>
+<div><div id="highlighter_282172" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">operator == ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;that ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">operator != ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;that ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">operator </code><code class="cpp keyword bold">delete</code> <code class="cpp plain">( </code><code class="cpp keyword bold">void</code> <code class="cpp plain">*obj ); </code></div></div></td></tr></tbody></table></div></div>
+<p>An operator function looks as follows: [type] <code class="brush:cpp">
+operator
+</code>[sign] ([parameters]) {}. In case of the first operator function, the type is&nbsp;<code class="brush:cpp">bool</code>, the sign is <code class="brush:cpp">
+==</code>, and the parameter is <code class="brush:cpp">
+const DateTime &amp;that</code>. Between the curly braces we find the way the operator function acts when it is confronted with the sign <code class="brush:cpp">
+==</code>. Because this is just a declaration, we'll have to&nbsp;look 
+at the definition, which we find later on in the FMXDateTime.h 
+header,&nbsp;to see how this works. Because the exception checking is 
+already discussed in <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxclient-h">FMXClient.h</a>, the definition is presented here without this procedure.</p>
+<div><div id="highlighter_119900" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">DateTime::operator == ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;that ) </code><code class="cpp keyword bold">const</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp color1 bold">bool</code> <code class="cpp plain">_rtn = FM_DateTime_operatorEQ ( </code><code class="cpp keyword bold">this</code><code class="cpp plain">, that, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">);</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">return</code> <code class="cpp plain">_rtn;</code></div><div class="line number5 index4 alt2"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>The <code class="brush:cpp">
+operator ==</code> function takes as an argument a <code class="brush:cpp">
+const DateTime &amp;that</code>. This is the field of a <code class="brush:cpp">
+DateTime
+</code>class . An example of how this function is called should shed some light on the operator functions:</p>
+<div><div id="highlighter_490263" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTime First;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">DateTime Second;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">( First.operator== (Second) )</code></div><div class="line number4 index3 alt1"><code class="cpp plain">{</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp comments">//do something</code></div><div class="line number6 index5 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>In the <code class="brush:cpp">
+if</code>-statement the operator function <code class="brush:cpp">
+==</code> of <code class="brush:cpp">
+First</code> is called. It takes as parameter <code class="brush:cpp">
+Second</code> (the&nbsp;<code class="brush:cpp">const DateTime &amp;that</code> of the function definition) and returns a <code class="brush:cpp">
+bool</code>. Instead of this more complicated notation, the operator == function can also be called thus:</p>
+<div><div id="highlighter_517716" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">( First == Second )</code></div></div></td></tr></tbody></table></div></div>
+<p>This looks exactly like you would compare two <code class="brush:cpp">
+int</code>s or two <code class="brush:cpp">
+char</code>s!</p>
+<p>Now let's go back and examine the function definition of <code class="brush:cpp">
+DateTime::operator ==</code> function a little more.</p>
+<p>In the function another function is called, <code class="brush:cpp">
+FM_DateTime_operatorEQ</code> (EQ&nbsp;is short for "equal to"). The parameters to the function are <code class="brush:cpp">
+this
+</code>and <code class="brush:cpp">
+that</code>. The first is a pointer to the class instance that calls this function. The second&nbsp;came in when the&nbsp;<code class="brush:cpp">operator ==
+</code>function was called.&nbsp;These two parameters correspond with the left and right classes in <code class="brush:cpp">
+First == Second</code>. The return type of the function <code class="brush:cpp">
+FM_DateTime_operatorEQ
+</code>is, just like the <code class="brush:cpp">
+operator ==
+</code>function, a <code class="brush:cpp">
+bool</code>. The <code class="brush:cpp">
+FM_DateTime_operatorEQ</code> function is declared elsewhere in the FMXDateTime.h header:</p>
+<div><div id="highlighter_144035" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp color1 bold">bool</code> <code class="cpp plain">FMX_API FM_DateTime_operatorEQ ( </code><code class="cpp keyword bold">const</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">*_self, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::DateTime &amp;that, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) </code><code class="cpp comments">/*E*/</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>Here we find a function with <code class="brush:cpp">
+FMX_API</code>. As explained in <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxextern-h">FMXExtern.h</a>,
+ this macro designates that the definition of the function is to be 
+found outside the plug-in header, in a library. This library comes with 
+the SDK and is called FMWrapper, with extension .lib in the Windows 
+version of this library. We only have the declaration and we 
+can't&nbsp;see what is going on in the definition of the function 
+itself. That means we don't have to worry about that, which is a good 
+thing! Because C++-compilers will mangle the name of the function, 
+which&nbsp;would&nbsp;make a match with a function 
+in&nbsp;the&nbsp;library impossible, all these <code class="brush:cpp">
+FMX_API
+</code>functions are declared in an <code class="brush:cpp">
+extern "C"
+</code>block.&nbsp;This API-function takes as parameters <code class="brush:cpp">
+const void *_self</code> and <code class="brush:cpp">
+const fmx::DateTime &amp;that</code>. The first was passed a <code class="brush:cpp">
+this
+</code>pointer, as we have seen; the other gets the class instance to which the class calling the <code class="brush:cpp">
+operator ==
+</code>function should be compared. The <code class="brush:cpp">
+const
+</code>keywords are&nbsp;there to make sure the objects passed to the 
+function are not modifiable. This way you can rest assure that after the
+ <code class="brush:cpp">
+FMX_DateTime_operatorEQ</code> call, the objects you passed to it are exactly the same as when you called the funtion.</p>
+<p>The <code class="brush:cpp">
+operator !=
+</code>functions operates in exactly the same way as the <code class="brush:cpp">
+operator ==
+</code>function, except that it calls <code class="brush:cpp">
+FMX_DateTime_operatorEQ
+</code>which returns <code class="brush:cpp">
+true
+</code>if the objects are not the same and vice-versa. You can use it thus:</p>
+<div><div id="highlighter_776917" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTime First;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">DateTime Second;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">( First.== (Second) )</code></div><div class="line number4 index3 alt1"><code class="cpp plain">{</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp comments">//do something</code></div><div class="line number6 index5 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>The third operator function is <code class="brush:cpp">
+operator delete</code>. It takes a <code class="brush:cpp">
+void *obj
+</code>(void pointer to an object) as parameter. The function can be executed thus:</p>
+<div><div id="highlighter_243634" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTime DTObject;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">DTObject.operator </code><code class="cpp keyword bold">delete</code> <code class="cpp plain">(&amp;DTObject);</code></div></div></td></tr></tbody></table></div></div>
+<p>Like with the <code class="brush:cpp">
+operator ==
+</code>and <code class="brush:cpp">
+operator !=
+</code>functions, there is a shorter notation:</p>
+<div><div id="highlighter_911814" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">delete</code> <code class="cpp plain">DateTime; </code></div></div></td></tr></tbody></table></div></div>
+<p>Whenever this is used, the <code class="brush:cpp">
+operator delete ()
+</code>function is called by the object of the <code class="brush:cpp">
+DateTime
+</code>class. This function is defined as:</p>
+<div><div id="highlighter_432" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">DateTime::operator </code><code class="cpp keyword bold">delete</code> <code class="cpp plain">( </code><code class="cpp keyword bold">void</code> <code class="cpp plain">*obj )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">FM_DateTime_Delete ( obj, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">);</code></div><div class="line number4 index3 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>The <code class="brush:cpp">
+FM_DateTime_Delete
+</code>function is again a Filemaker API function of which only the 
+definition is given in the header file. The function passes the pointer 
+to the object to&nbsp;the library, which takes care that it is deleted.</p>
+<p>The constructor functions of <code class="brush:cpp">
+DateTime</code> are&nbsp;its only private members. They cannot be called
+ from outside the class because they are private. (The public members 
+are all available to use and you should if you like to.) A constructor 
+function is always called when a class instance is created. Calling 
+the&nbsp;constructors <code class="brush:cpp">
+DateTime()</code> and&nbsp;<code class="brush:cpp">
+DateTime ( const DateTime &amp;other )</code> is demonstrated by the following examples:</p>
+<div><div id="highlighter_164758" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTime First; </code><code class="cpp comments">//calls the first constructor </code></div><div class="line number2 index1 alt1"><code class="cpp plain">DateTime Second( First ); </code><code class="cpp comments">//calls the second constructor</code></div></div></td></tr></tbody></table></div></div>
+<p>After these constructor functions we have two <code class="brush:cpp">
+DateTime
+</code>objects ready to be used. That is, if the constructors weren't 
+private. The compiler will complain that the constructors are not 
+accessible. We cannot create a <code class="brush:cpp">
+DateTime
+</code>object, as we will see. Also, the constructors do not have 
+definitions. So where are they defined? The answer is: in the library! 
+In fact you will never use the class as it is&nbsp;defined in this 
+header. That is to say, you will need all these definitions to know how 
+to deal with the class, but your plug-in source files will never 
+"create" an instance of it. That's why you do not need a definition for 
+this class's constructors. If you want to use it, you will have to 
+create a pointer to an object that itself exists in the&nbsp;library. If
+ you want to create the classes like&nbsp;this:</p>
+<div><div id="highlighter_844197" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTime First; </code><code class="cpp comments">//calls the first constructor </code></div><div class="line number2 index1 alt1"><code class="cpp plain">DateTime Second( First ); </code><code class="cpp comments">//calls the second constructor</code></div></div></td></tr></tbody></table></div></div>
+<p>the compiler will give you an error&nbsp;that there are no 
+constructor definitions for this class. (Explicitly declaring 
+constructors will signal the compiler that the default constructor 
+should not be used.)</p>
+<p>This is where the autopointer class comes in. It is defined thus:</p>
+<div><div id="highlighter_141893" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">class</code> <code class="cpp plain">DateTimeAutoPtr : </code><code class="cpp keyword bold">public</code> <code class="cpp plain">std::auto_ptr&lt;DateTime&gt;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">typedef</code> <code class="cpp plain">DateTimeAutoPtr&nbsp;&nbsp;&nbsp;&nbsp; UpCaster;</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">public</code><code class="cpp plain">:</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">DateTimeAutoPtr ();</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">DateTimeAutoPtr ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">unichar* dateString, uint32 dateLength, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Locale&amp; intl );</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">DateTimeAutoPtr ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;dateText, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Locale &amp;intl );</code></div><div class="line number8 index7 alt1"><code class="cpp plain">};</code></div></div></td></tr></tbody></table></div></div>
+<p>This class is derived from the <code class="brush:cpp">
+auto_ptr
+</code>(automatic pointer) class&nbsp;from the standard header 
+&lt;memory&gt; (included by FMXClient.h).&nbsp;One of the methods of the
+ <code class="brush:cpp">
+auto_ptr
+</code>is <code class="brush:cpp">
+reset(x)
+</code>which resets the pointer and provides a new value <code class="brush:cpp">
+x</code>&nbsp;for it. The <code class="brush:cpp">
+DateTimeAutoPtr</code> contains a type definition. The type definition is only there to acommodate the use of the <code class="brush:cpp">
+FMX_AUTOPTRRESET(x)</code> macro, of which the details are explained in <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxextern-h">FMXExtern.h</a>. We will not explain this procedure in detail in this section, but we will considered it equivalent to the <code class="brush:cpp">
+auto_ptr</code> method <code class="brush:cpp">
+reset(c)</code>. Apart from this method, the <code class="brush:cpp">
+auto_ptr
+</code>class comes with a constructor, which is <code class="brush:cpp">
+auto_ptr (auto_ptr &amp;)</code>.&nbsp;This means you can create a new 
+autopointer by supplying the field of an existing autopointer. This 
+constructor is inherited by <code class="brush:cpp">
+DateTimeAutoPtr</code>, so you can assign the address of an existing object of this class to a newly created <code class="brush:cpp">
+DateTimeAutoPtr</code>. The other three constructors that <code class="brush:cpp">
+DateTimeAutoPtr
+</code>are explicitly defined and are worth looking into because the <code class="brush:cpp">
+DateTime</code>&nbsp;autopointer is our gateway to&nbsp;the <code class="brush:cpp">
+DateTime</code> class. The constructors of the autopointer class do have
+ definitions, so we can make an instance of an autopointer. What happens
+ when we do so? Let's take a look at the procedure. We'll call the 
+constructor thus:</p>
+<div><div id="highlighter_269776" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">DateTimeAutoPtr Instance; </code></div></div></td></tr></tbody></table></div></div>
+<p>This does not give a compiler error because the constructor is not only declared, it is also defined:</p>
+<div><div id="highlighter_230329" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">DateTimeAutoPtr::DateTimeAutoPtr () </code></div><div class="line number2 index1 alt1"><code class="cpp plain">{ </code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">FMX_AUTOPTRRESET ( FM_DateTime_Constructor1 ( </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) ); </code></div><div class="line number4 index3 alt1"><code class="cpp plain">} </code></div></div></td></tr></tbody></table></div></div>
+<p>&nbsp;When an&nbsp;obejct of class <code class="brush:cpp">
+DateTimeAutoPtr</code>&nbsp;is created,&nbsp;this constructor is called. Replacing the macro with its definition, the function that is called is:</p>
+<div><div id="highlighter_410206" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">reset ( FM_DateTime_Constructor1 ( </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) ); </code></div></div></td></tr></tbody></table></div></div>
+<p>This "resets" the autopointer that was just created to a new value. This new value is the variable returned by <code class="brush:cpp">
+FM_DateTime_Constructor1 ()</code>. We will have to look at this 
+function to get to know what it does. It appears to be a Filemaker API 
+function (of which we can't see the definition):</p>
+<div><div id="highlighter_393373" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::DateTime FMX_API *FM_DateTime_Constructor1 ( </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) </code><code class="cpp comments">/*E*/</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>This function, <code class="brush:cpp">
+FM_DateTime_Constructor1</code>, returns a <code class="brush:cpp">
+DateTime</code> pointer. As we can deduce from its name it is a constructor for the class <code class="brush:cpp">
+DateTime</code>. This means that we can create an object of class <code class="brush:cpp">
+DateTime</code> in the FMWrapper library. The library returns a pointer to a <code class="brush:cpp">
+DateTime
+</code>object to our <code class="brush:cpp">
+DateTimeAutoPtr</code>. Through this pointer we are able to access the object in the FMWrapper library.</p>
+<p>Using the other two constructors of our <code class="brush:cpp">
+DateTimeAutoPtr
+</code>we can initialize members of the&nbsp;library object. To the 
+second&nbsp; and third constructor we can pass the following arguments:</p>
+<div><div id="highlighter_333204" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp comments">//second DateTimeAutoPtr constructor arguments</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">const</code> <code class="cpp plain">unichar* dateString</code></div><div class="line number3 index2 alt2"><code class="cpp plain">uint32 dateLength</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">const</code> <code class="cpp plain">Locale&amp; intl</code></div><div class="line number5 index4 alt2"><code class="cpp comments">//third DateTimeAutoPtr constructor arguments</code></div><div class="line number6 index5 alt1"><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;dateText</code></div><div class="line number7 index6 alt2"><code class="cpp keyword bold">const</code> <code class="cpp plain">Locale&amp; intl</code></div></div></td></tr></tbody></table></div></div>
+<p>These will be passed to an API&nbsp;function of which the resulting <code class="brush:cpp">
+DateTime</code> pointer is used to set (or "reset")&nbsp;the <code class="brush:cpp">
+DateTimeAutoPtr</code> (using the macro).</p>
+<div><div id="highlighter_764879" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">reset ( FM_DateTime_Constructor2 ( dateString, dateLength, intl, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) );</code></div><div class="line number2 index1 alt1"><code class="cpp comments">//or</code></div><div class="line number3 index2 alt2"><code class="cpp plain">reset ( FM_DateTime_Constructor3 ( dateText, intl, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) );</code></div></div></td></tr></tbody></table></div></div>
+<p>The API function <code class="brush:cpp">
+FM_DateTime_Constructor2</code> and <code class="brush:cpp">
+FM_DateTime_Constructor3</code> are declared as:</p>
+<div><div id="highlighter_721127" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::DateTime FMX_API *FM_DateTime_Constructor2 ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::unichar* dateString, fmx::uint32 dateLength, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::Locale&amp; intl, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) </code><code class="cpp comments">/*E*/</code></div><div class="line number2 index1 alt1"><code class="cpp comments">//and</code></div><div class="line number3 index2 alt2"><code class="cpp plain">fmx::DateTime FMX_API *FM_DateTime_Constructor3 ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::Text &amp;dateText, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::Locale &amp;intl, </code><code class="cpp comments">/*E*/</code> <code class="cpp plain">) </code><code class="cpp comments">/*E*/</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>The last argument is, in both case, an object of the&nbsp;<code class="brush:cpp">Locale</code> class (which is defined in <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtypes-h">FMXTypes.h</a>).
+ It serves to tell Filemaker the format in which your&nbsp;supplied date
+ should be interpreted. You supply the date that you need as the first 
+parameter. To constructor 2 you need to supply a&nbsp;<code class="brush:cpp">unichar *</code> (an <code class="brush:cpp">unsigned short </code>pointer or unicode character string). Constructor 3 takes a <code class="brush:cpp">
+Text</code> class object. Because the unicode character string can be of
+ any length, you will have to provide the length of the date you supply.
+ Otherwise&nbsp;the library&nbsp;would not know where to stop reading 
+the string you provided. This is not needed when you pass a <code class="brush:cpp">
+Text</code> class. The library takes care of this class, so it knows the
+ length. Here is an example of how to call these two constructors (the <code class="brush:cpp">
+Locale</code> and <code class="brush:cpp">
+Text</code> classes are&nbsp;discussed in headers&nbsp;<a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtypes-h">FMXTypes.h</a> and <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtext-h">FMXText.h</a>):</p>
+<div><div id="highlighter_638654" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::LocaleAutoPtr intl( fmx::Locale::kType_System ); </code><code class="cpp comments">//initialize a Locale with system setting </code></div><div class="line number2 index1 alt1"><code class="cpp comments">//constructor 2 </code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">const</code> <code class="cpp plain">fmx::uint32 Length= 10; </code></div><div class="line number4 index3 alt1"><code class="cpp color1 bold">char</code> <code class="cpp plain">* DateCharPointer = </code><code class="cpp string">"30-10-2010"</code><code class="cpp plain">; </code><code class="cpp comments">//char pointer that holds the date (system is set to dd-mm-yyyy </code></div><div class="line number5 index4 alt2"><code class="cpp plain">unsigned </code><code class="cpp color1 bold">short</code> <code class="cpp plain">DateShortPointer[Length]; </code><code class="cpp comments">//short pointer that needs to get the date string</code></div><div class="line number6 index5 alt1"><code class="cpp keyword bold">for</code><code class="cpp plain">(</code><code class="cpp color1 bold">int</code> <code class="cpp plain">i = 0; i &lt; Length; i++) </code><code class="cpp comments">//Put chars into short pointer </code></div><div class="line number7 index6 alt2"><code class="cpp plain">{ </code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">DateShortPointer[i] = DateCharPointer[i]; </code></div><div class="line number9 index8 alt2"><code class="cpp plain">} </code></div><div class="line number10 index9 alt1"><code class="cpp plain">fmx::DateTimeAutoPtr One(DateShortPointer,Length,*intl); </code></div><div class="line number11 index10 alt2"><code class="cpp comments">//constructor 3 </code></div><div class="line number12 index11 alt1"><code class="cpp plain">fmx::TextAutoPtr TextClass; </code></div><div class="line number13 index12 alt2"><code class="cpp plain">TextClass-&gt;Assign(</code><code class="cpp string">"30-10-2010"</code><code class="cpp plain">); </code></div><div class="line number14 index13 alt1"><code class="cpp plain">fmx::DateTimeAutoPtr Two(*TextClass,*intl); </code></div></div></td></tr></tbody></table></div></div>
+<p>Now we have two <code class="brush:cpp">
+DateTime
+</code>objects in&nbsp;the library&nbsp;that both contain the date 30 October 2010. You can see that the easiest way to set the the <code class="brush:cpp">DateTime </code>object
+ is to use constructor 3. This is because constructor 2 needs a string 
+to be put into a short pointer (Filemaker's unicode implementation), 
+which&nbsp;is a bit of a hassle to do in a cross-platform way. As you 
+can see from the above example is that no time is supplied to the 
+constructor. Whenever&nbsp;the library&nbsp;creates an obect of&nbsp;<code class="brush:cpp">DateTime</code>,
+ it will initialize the timestamp to 0. So we start out with timestamp 
+00-00-0000 00:00:00 (in the locale used here). So, if we supply only a 
+date, as in the above example, the time is set to 00:00:00 (midnight).</p>
+<p>This is all we have to discuss about the <code class="brush:cpp">
+DateTimeAutoPtr
+</code>class. Use it to manipulate the <code class="brush:cpp">
+DateTime</code> object that it points to. We can&nbsp;use 25 methods of 
+this class that&nbsp;either&nbsp;set&nbsp;a value in the object&nbsp;or 
+retrieve a value from it. This begs the question: where are the values 
+stored? They cannot be stored in the <code class="brush:cpp">
+DateTime</code> object, because it does not have any member variables. 
+However, you should not worry about that.&nbsp;The library&nbsp;makes 
+sure that whenever a <code class="brush:cpp">
+DateTime</code> object is created, it also creates a storage space 
+for&nbsp;member variables of the object. This could be done using a 
+struct that contains a member variable and a member <code class="brush:cpp">
+DateTime</code> class. Whenever you request an object,&nbsp;the 
+library&nbsp;would create a struct and return the address of the member 
+class. Whenever this class uses a method,&nbsp;the 
+library&nbsp;manipulates or returns the corresponding value in the 
+struct. Most probably, however,&nbsp;the library&nbsp;creates an object 
+of a derived class. This derived class contains all the member variables
+ you need to be associated with the base class you can use. After 
+creating an object of the derived class, the derived class is 
+dynamilcally cast to a base class object of which you receive a pointer.</p>
+<p>Now we have discussed all the features of the <code class="brush:cpp">
+DateTimeAutoPtr</code> and we have looked at the constructors and operator functions of the <code class="brush:cpp">
+DateTime</code> class. This leaves us with the&nbsp;25 regular methods of the latter.</p>
+<p>Ten methods are used to set the value corresponding to the <code class="brush:cpp">
+DateTime</code> class. The other fifteen methods are used to retrieve 
+information about the value stored in the library. We'll start by 
+examining how to put information "into the class". We have already seen 
+that we can initialize the date when we use constructor 2 or constructor
+ 3 of the <code class="brush:cpp">
+DateTImeAutoPtr</code>. When the object is constructed we can do&nbsp;ten other things store information.</p>
+<div><div id="highlighter_581118" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Now ();</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetDate ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;datetime );</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedDate ( int16 month, int16 day, int16 year );</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedDate ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;year, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;month, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;day );</code></div><div class="line number5 index4 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetDaysSinceEpoch ( int64 days );</code></div><div class="line number6 index5 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetTime ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;datetime );</code></div><div class="line number7 index6 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedTime ( int64 hour, int16 minute, int16 sec, int32 usec = 0 );</code></div><div class="line number8 index7 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode SetNormalizedTime ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;hour, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;minute, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;sec );</code></div><div class="line number9 index8 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetSecsSinceMidnight ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;secs );</code></div><div class="line number10 index9 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">SetSecondsSinceEpoch ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;seconds );</code></div></div></td></tr></tbody></table></div></div>
+<p>The first method is pretty obvious. It sets the value to the current 
+date and time. The second is also obvious. It sets the date to the date 
+of another <code class="brush:cpp">
+DateTime</code> object. The third and fourth are two variants of <code class="brush:cpp">
+SetNormalizedDate</code>. Setting a normalized date is setting a date 
+conforming to the standard Filemaker format, which is providing 
+numbers&nbsp;for month, day, and year. You can either provide these as <code class="brush:cpp">
+int16</code> (which is <code class="brush:cpp">
+short</code>) or store them in&nbsp;<code class="brush:cpp">FixPt</code> class objects&nbsp;and provide those.&nbsp;(How to deal with the <code class="brush:cpp">
+FixPt
+</code>class is discussed in FMXFixPt.h. For both variants of this 
+function you can check the return value.&nbsp;The FMWrapper 
+library&nbsp;will set it to one of Filemaker's error values, which can 
+be found <a href="http://www.filemaker.com/help/html/error_codes.html">here</a>. If this is not 0, you should do something about it. The following, for example, will give you error value 14 "Out of range":</p>
+<div><div id="highlighter_877413" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::DateTimeAutoPtr Date;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::errcode Err = Date-&gt;SetNormalizedDate(10000,10000,10000);</code></div><div class="line number3 index2 alt2"><code class="cpp comments">//Err = 14 </code></div></div></td></tr></tbody></table></div></div>
+<p>The next method sets the date by providing the days since epoch. 
+Epoch is always set to 1/1/0001 12:00:00 AM (January 1 in the year 1 AD 
+at 12 o'clock in the afternoon). If you provide the number 1 to this 
+function, the stored date is 2 January 2 in the year 1 AD.</p>
+<p>The SetTime method can be used to set the stored value for time to the one in a <code class="brush:cpp">
+DateTime</code> object that you provide. You can also set the time using the <code class="brush:cpp">
+SetNormalizedTime</code> methods. The first takes numbers, the other takes <code class="brush:cpp">
+FixPt
+</code>class objects as arguments. Both variants return an error code which you should check. To the first <code class="brush:cpp">
+SetNormalizedTime
+</code>method you can either provide three numbers, in which case the 
+number of microseconds is set to 0, or you can supply four arguments, in
+ which case the fourth is the amount of microsecond you need to set.</p>
+<p>The methods <code class="brush:cpp">
+SetSecsSinceMidnight</code> and <code class="brush:cpp">
+SetSecondsSinceEpoch</code> differ in that the first&nbsp;sets the 
+stored amount of hours, minutes and seconds to zero and adds the number 
+of seconds provided. It leaves the stored date alone. If you provide an 
+amount higher than 24 hours, the hour in the <code class="brush:cpp">
+DateTime</code> is set higher than 24. For example, passing 60*60*27 
+seconds will set the hour to 27.&nbsp;The second method resets the 
+stored date and time to the epoch date and time, and then adds the 
+number of seconds provided as the argument.</p>
+<p>The regular methods ad the autopointer constructors discussed so far are all used to set a <code class="brush:cpp">
+DateTime</code>&nbsp;object. We have 15 methods left that wil retrieve information from the <code class="brush:cpp">
+DateTime</code> object. These are:</p>
+<div><div id="highlighter_790992" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">IsLeapYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 DayOfWeek () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 DayOfYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 WeekOfYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number5 index4 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetYear () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number6 index5 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetMonth () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number7 index6 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetDay () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number8 index7 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetDaysSinceEpoch () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number9 index8 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetHour () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number10 index9 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetMinute () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number11 index10 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int16 GetSec () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number12 index11 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp plain">int32 GetUSec () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number13 index12 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSeconds ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number14 index13 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSecsSinceMidnight ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number15 index14 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">GetSecondsSinceEpoch ( FixPt &amp;results ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>You can use the <code class="brush:cpp">
+IsLeapYear</code> method which return <code class="brush:cpp">
+true</code> when the stored date is a leap year. The methods <code class="brush:cpp">
+DayOfTheWeek</code> and <code class="brush:cpp">
+DayOfTheYear</code> return a number representing the number of the day 
+within a week or the number of days since the beginning of the year. The
+ methods <code class="brush:cpp">
+GetYear</code>, <code class="brush:cpp">
+GetMonth</code>, and <code class="brush:cpp">
+GetDay
+</code>are self-evident. Method <code class="brush:cpp">
+GetDaysSinceEpoch</code> returns the number of days from the epoch to the stored date. Methods <code class="brush:cpp">
+GetHour</code>, and&nbsp;<code class="brush:cpp">GetMinute</code>&nbsp;are again self-evident. There are three methods dealing with seconds: <code class="brush:cpp">
+GetSec</code>, <code class="brush:cpp">
+GetUSec</code>, and <code class="brush:cpp">
+GetSeconds</code>.&nbsp; The second of these return the number of 
+milliseconds. The first and third differ in that the first simply return
+ a number; the third puts the number in a <code class="brush:cpp">
+FixPt</code> class that you provide. The last two methods to retrieve information are <code class="brush:cpp">
+GetSecsSinceMidnight</code>, which takes the stored&nbsp;hours, minutes and seconds and return the sum of these in seconds, and&nbsp;the <code class="cpp plain">GetSecondsSinceEpoch</code>
+ which copmutes the differenve between on the one hand&nbsp;the total 
+amount of seconds of the stored time and date, and on the other the 
+epoch date and time, and puts it in a <code class="brush:cpp">
+FixPt</code> object.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	
+</div>
+
+						</div>
+					
+								<div class="clr"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<p style="text-align:center;">
+ 	Van der Linden Cultural Services, Powered by <a href="http://joomla.org/" class="sgfooter" target="_blank">Joomla!</a>
+
+	
+
+	
+	
+
+</p>
+		</div>
+		</div>
+	</div>
+	<div id="footergrad">&nbsp;</div>
+
+<div style="padding: 0px; border: medium none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" href="javascript:;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><div style="padding: 0px; border: medium none; margin: 0px; visibility: hidden;" class="highslide-viewport highslide-viewport-size"></div><table style="padding: 0px; border: medium none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;" cellspacing="0"><tbody style="padding: 0px; border: medium none; margin: 0px;"><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -80px; height: 20px; width: 20px;"></td><td class="drop-shadow highslide-outline" style="padding: 0px; border: medium none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table></div></body></html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html slick-uniqueid="3" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" dir="ltr" lang="en-gb"><head>
+<script src="FMXCalcEngine.h_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34699114-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	  <!-- base href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxcalcengine-h" -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="productie, podiumkunsten, cultuur, cultuursector, copywriter, teksten, tekstschrijver, programmatoelichting, programmaboek, redactie, redacteur,planning, concerten, festivals, subsidieaanvragen, ensembles, Filemaker sdk headers, filemaker, sdk, filemaker api, api, plug-ins, plug-in, filemaker plug-in, filemaker plug-ins, ">
+  <meta name="author" content="Super User">
+  <meta name="description" content="Van der Linden Cultural Services levert diensten in de cultuursector. U kunt terecht voor teksten (zakelijk en informatief), productie en stage management in de podiumkunsten, Filemaker-database-development, transport, etc.">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>Van der Linden Cultural Services - FMXCalcEngine.h</title>
+  <link href="http://culturalservices.nl/index.php/component/search/?Itemid=544&amp;format=opensearch" rel="search" title="Search Van der Linden Cultural Services" type="application/opensearchdescription+xml">
+  <link rel="stylesheet" href="FMXCalcEngine.h_files/highslide.css" type="text/css">
+  <link rel="stylesheet" href="FMXCalcEngine.h_files/highslide-sitestyles.css" type="text/css">
+  <link rel="stylesheet" href="FMXCalcEngine.h_files/shCoreEclipse.css" type="text/css">
+  <link rel="stylesheet" href="FMXCalcEngine.h_files/shThemeEclipse.css" type="text/css">
+  <script src="FMXCalcEngine.h_files/mootools-core.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/core.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/caption.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/highslide-full.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/easing_equations.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/swfobject.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/en.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/highslide-sitesettings.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shCore.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushCpp.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushCSharp.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushCss.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushJava.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushJScript.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushPhp.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushPlain.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/shBrushXml.js" type="text/javascript"></script>
+  <script src="FMXCalcEngine.h_files/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+hs.graphicsDir = '/plugins/content/highslide/graphics/';
+
+			  SyntaxHighlighter.all();
+		 
+  </script>
+
+	<!-- The following line loads the template CSS file located in the template folder. -->
+	<link rel="stylesheet" href="FMXCalcEngine.h_files/template.css" type="text/css">
+<style type="text/css">.highslide img {cursor: url(/plugins/content/highslide/graphics/zmin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+<body id="page_bg">
+
+	<div class="top-menu">
+		<div id="sgmenu">
+			
+		</div>
+	</div>
+
+	<div id="mainwrap">
+	<div id="header">
+	
+
+	
+	
+		<div id="search">
+			<form action="/index.php/filemaker-plug-ins/fmxcalcengine-h" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" size="20" value="Search..." onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" type="text">	<input name="task" value="search" type="hidden">
+	<input name="option" value="com_search" type="hidden">
+	<input name="Itemid" value="544" type="hidden">
+	</div>
+</form>
+
+		</div>
+	
+		<h1><a href="http://www.culturalservices.nl/index.php/filemaker-plug-ins">Filemaker Plug-Ins</a></h1>					
+		
+	</div>
+	<div id="wrapper">
+		<div id="content_m">
+						<div class="maincol_w_left">
+						
+									<div class="leftcol">
+								<div class="module">
+			<div>
+				<div>
+					<div>
+													<h3>Filemaker</h3>
+											
+
+
+
+
+
+
+
+
+<ul class="menu">
+
+
+
+
+<li id="item-535" class="active parent"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins"><span>Filemaker SDK headers</span></a><ul><li id="item-532"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxextern-h"><span>FMXExtern.h</span></a></li><li id="item-537"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxclient-h"><span>FMXClient.h</span></a></li><li id="item-538"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/datetime-h"><span>FMXDateTime.h</span></a></li><li id="item-539"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxfixpt-h"><span>FMXFixPt.h</span></a></li><li id="item-540"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtextstyle-h"><span>FMXTextStyle.h</span></a></li><li id="item-542"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtypes-h"><span>FMXTypes.h</span></a></li><li id="item-545"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxbinarydata-h"><span>FMXBinaryData.h</span></a></li><li id="item-546"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxtext-h"><span>FMXText.h</span></a></li><li id="item-543"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxdata-h"><span>FMXData.h</span></a></li><li id="item-544" class="current active"><a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxcalcengine-h"><span>FMXCalcEngine.h</span></a></li></ul></li><li id="item-536"><a href="http://culturalservices.nl/index.php/resources"><span>Resources</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	
+					</div>
+					
+						<div class="cont">
+							<div class="item-page">
+
+	<h2>
+			<a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxcalcengine-h">
+		FMXCalcEngine.h</a>
+		</h2>
+
+
+
+
+
+
+
+
+<p><code class="brush:cpp">
+</code>The FMXCalcEngine.h header contains a function pointer, <code class="brush:cpp">
+ExtPluginType</code>, and three classes, <code class="brush:cpp">
+DataVect</code>, <code class="brush:cpp">
+RowVect</code>, and <code class="brush:cpp">
+ExprEnv</code>. It also contains the three autopointers for these classes, through which they are created.</p>
+<p>The function pointer in this header is actually a very important one.
+ It is the function pointer to your plug-ins external functions. 
+Whenever you have created a function to be used by Filemaker, you need 
+to let Filemaker know which function it is and where it can be found in 
+your plug-in. You do this by passing Filemaker the address of your 
+plug-in's function. To do that, you need this&nbsp;pointer:</p>
+<div><div id="highlighter_811082" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">FMX_PROCPTR( errcode, ExtPluginType ) ( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result );</code></div></div></td></tr></tbody></table></div></div>
+<p>Using our knowledge of the <code class="brush:cpp">
+FMX_PROCPTR</code> (see <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxextern-h">FMXExtern.h</a>), we know this is a typedef, that looks like this:</p>
+<div><div id="highlighter_502707" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">typedef</code> <code class="cpp plain">errcode ExtPluginType ( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result );</code></div></div></td></tr></tbody></table></div></div>
+<p>And now you could write&nbsp;a pointer that looks like a type and can be used to assign an address to it. Like this:</p>
+<div><div id="highlighter_343288" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">void</code> <code class="cpp plain">ACertainFunction( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">//do stuff</code></div><div class="line number4 index3 alt1"><code class="cpp plain">}</code></div><div class="line number5 index4 alt2"><code class="cpp plain">ExtPluginType funcPtr = ACertainFunction;</code></div></div></td></tr></tbody></table></div></div>
+<p>Or, you can pass the address (given by the name) of the function to another function.</p>
+<div><div id="highlighter_340397" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">void</code> <code class="cpp plain">ACertainFunction( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">//do stuff</code></div><div class="line number4 index3 alt1"><code class="cpp plain">}</code></div><div class="line number5 index4 alt2"><code class="cpp keyword bold">void</code> <code class="cpp plain">AnotherFunctioin( ExtPluginType functPtr )</code></div><div class="line number6 index5 alt1"><code class="cpp plain">{</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">//do stuff with the function passed to it</code></div><div class="line number8 index7 alt1"><code class="cpp plain">}</code></div><div class="line number9 index8 alt2"><code class="cpp comments">//Then, pass the first function's address as a parameter to the second function</code></div><div class="line number10 index9 alt1"><code class="cpp keyword bold">void</code> <code class="cpp plain">AnotherFunction( ACertainFunction );</code></div></div></td></tr></tbody></table></div></div>
+<p>This is the procedure used to let Filemaker know where you plug-in's 
+function can be found, as we will see below on when discussing the <code class="brush:cpp">
+RegisterExternalFunction</code> method of the <code class="brush:cpp">
+ExprEnv</code> class. For now, let's examine the function pointer. As 
+said, it is used to pass the address of your plug-in's function to 
+Filemaker, by using the name of your plug-in's function as an argument. 
+This means that whenever you create a function that will be used as an 
+external function in Filemaker, you need to conform to the function 
+pointer's return type and arguments. So, any external&nbsp;function in 
+you plug-in should look like the following example in order to be able 
+to pass the addres of it to Filemaker.</p>
+<div><div id="highlighter_503256" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::errcode AnExternalFunction ( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{ </code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">//do stuff </code></div><div class="line number4 index3 alt1"><code class="cpp plain">} </code></div></div></td></tr></tbody></table></div></div>
+<p>Only when your external functions look exactly like this (except the name), you can pass their names&nbsp;as <code class="brush:cpp">
+ExtPluginType</code>. We will look at how you pass the functions to 
+Filemaker below, but for now, let's have a look at the arguments that 
+need to be passed to all of your plug-in's external functions.</p>
+<p>The first is a <code class="brush:cpp">
+short</code> called <code class="brush:cpp">
+functionId</code>. This is a number that represents a function and should be unique for every external function. You set it by using the <code class="brush:cpp">RegisterExternalFunction</code>
+ method to be discussed below. Remember that you plug-in's functions are
+ called by Filemaker and you have to adhere to the function pointer to 
+be able to register your functions, so the <code class="brush:cpp">functionId</code> is passed to all of your plug-in's external functions.</p>
+<p>The second argument to all of your plug-in's functions should be a pointer to an object of class <code class="brush:cpp">
+ExprEnv</code>. This class and its methods will be discussed below, but,
+ in short, it represents Filemaker's calculation environment (or 
+expression environment). When using the methods of this class, make sure
+ you always use the object passed to your external function, because 
+that is your gateway to doing calculations in Filemaker. other wise you 
+would do calculation from an empty object. There is, though, another way
+ to get an <code class="brush:cpp">
+ExprEnv</code> object from Filemaker into you plug-in. This can be done by using the <code class="brush:cpp">
+cCurrentEnv</code> function pointer which is a member of the <code class="brush:cpp">
+FMX_ExternCallStruct</code>. There is a macro for this function pointer, called <code class="cpp plain">FMX_SetToCurrentEnv(env)</code>. It takes a regular pointer to an <code class="brush:cpp">
+ExprEnv</code> as argument and retrieves a valid expression environment 
+object from Filemaker into it the object passed to it. There are two 
+ways in which you can write the argument to the macro.</p>
+<div><div id="highlighter_650776" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp comments">//method 1</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::ExprEnvAutoPtr EAP;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">FMX_SetToCurrentEnv(&amp;(*EAP)); </code><code class="cpp comments">//the address of a dereferenced autopointer</code></div><div class="line number4 index3 alt1"><code class="cpp comments">//method 2</code></div><div class="line number5 index4 alt2"><code class="cpp plain">fmx::ExprEnvAutoPtr EAP;</code></div><div class="line number6 index5 alt1"><code class="cpp plain">FMX_SetToCurrentEnv(EAP.get()));</code></div><div class="line number7 index6 alt2"><code class="cpp comments">//the get() method is inherited from auto_ptr and retrieves a normal pointer to the object pointed to by the autopointer</code></div></div></td></tr></tbody></table></div></div>
+<p>The third argument of your plug-in's external functions should always be <code class="brush:cpp">
+parms</code>, a pointer to a <code class="brush:cpp">
+DataVect</code> object.&nbsp;Again, this class will be discussed below, but to summarize, it is a container for multiple <code class="brush:cpp">
+Data</code> objects. Whenever a user of your plug-in's external 
+functions passes any arguments to these functions, Filemaker will put 
+those arguments in <code class="brush:cpp">
+Data</code> objects&nbsp;and put those <code class="brush:cpp">
+Data</code> object in one <code class="brush:cpp">
+DataVect</code> object.</p>
+<p>The fourth argument to all of your plug-in's external functions should be <code class="brush:cpp">
+result</code>, a <code class="brush:cpp">
+Data</code> object (see <a href="http://culturalservices.nl/index.php/filemaker-plug-ins/fmxdata-h">FMXData.h</a>). If your external function needs to return a value at the point it&nbsp;was called, you should set the <code class="brush:cpp">
+result</code> object. For example, a plug-in external function that, when called, should return the text "hello world", could look like this:</p>
+<div><div id="highlighter_50017" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">FMX_PROC(fmx::errcode) AnExternalFunction ( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">fmx::TextAutoPtr TAP;</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">fmx::LocaleAutoPtr LAP;</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">TAP-&gt;Assign(</code><code class="cpp string">"Hello World"</code><code class="cpp plain">); </code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">result.SetAsText(*TAP, *LAP);</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">return</code> <code class="cpp plain">0;</code></div><div class="line number8 index7 alt1"><code class="cpp plain">} </code></div></div></td></tr></tbody></table></div></div>
+<p>Now, Filemaker will insert "Hello World" at the point the external function was called.</p>
+<p>In order to know how your plug-in's external functions can use the 
+second and third element passed to it by Filemaker, we will have to 
+examine the classes of the FMXCalcEngine.h header.</p>
+<p>The autopointers for the <code class="brush:cpp">DataVect</code>, <code class="brush:cpp">RowVect</code>, and <code class="brush:cpp">ExprEnv</code>
+ classes do not contain any special constructors, so you should create 
+them (and at the same time the object they point to),&nbsp;like this:</p>
+<div><div id="highlighter_880195" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::DataVectAutoPtr DVAP;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::RowVectAutoPtr RVAP;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">fmx::ExprEnvAutoPtr EVAP;</code></div></div></td></tr></tbody></table></div></div>
+<p>The <code class="brush:cpp">
+DataVect</code> (data vector) acts as a container for <code class="brush:cpp">
+Data</code> object. It has the following methods (excluding the operator delete, which you do not have to bother with).</p>
+<div><div id="highlighter_397208" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">uint32 Size () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Clear ();</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">IsEmpty () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">PushBack ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Data &amp;data );</code></div><div class="line number5 index4 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">Data *PopBack ();</code></div><div class="line number6 index5 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">Data &amp;At ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number7 index6 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;AtAsText ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number8 index7 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">FixPt &amp;AtAsNumber ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number9 index8 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;AtAsDate ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number10 index9 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;AtAsTime ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number11 index10 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">DateTime &amp;AtAsTimeStamp ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number12 index11 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">AtAsBoolean ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number13 index12 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">BinaryData &amp;AtAsBinaryData ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>Method <code class="brush:cpp">
+Size</code> returns the number of <code class="brush:cpp">Data</code> objects in the vector. Method <code class="brush:cpp">
+Clear</code> is used to empty the vector. <code class="brush:cpp">
+IsEmpty</code> is used to check whether the vector is empty or not. <code class="brush:cpp">
+Pushback</code> adds a <code class="brush:cpp">Data</code> object to the vector. You can use <code class="brush:cpp">
+PopBack</code> to clear the last added <code class="brush:cpp">Data</code> object from the vector and retrieve this object. The method <code class="brush:cpp">
+At</code> returns a <code class="brush:cpp">Data</code> object at a position you pass to it. The following methods, <code class="brush:cpp">
+AtAsText</code>, <code class="brush:cpp">AtAsNumber</code>, <code class="brush:cpp">AtAsDate</code>, <code class="brush:cpp">AtAsTime</code>, <code class="brush:cpp">AtAsTimestamp</code>, <code class="brush:cpp">AtAsBoolean</code>, and <code class="brush:cpp">AtAsBinaryData</code>, return an object of one the classes specified in their return type.</p>
+<p>The <code class="brush:cpp">
+RowVect</code> (row vector) class acts as a container for <code class="brush:cpp">
+DataVect</code> objects. You cannot do many things with this objects. its methods are:</p>
+<div><div id="highlighter_729805" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">uint32 Size () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">inline</code> <code class="cpp color1 bold">bool</code> <code class="cpp plain">IsEmpty () </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect &amp;At ( uint32 position ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>Method <code class="brush:cpp">Size</code> returns the number of <code class="brush:cpp">DataVect</code> objects in the row. Method <code class="brush:cpp">IsEmpty</code> is used to check whether the row is empty or not. The method <code class="brush:cpp">At</code> returns a <code class="brush:cpp">DataVect</code> object at the position you supply.</p>
+<p>The most important class in the FMXCalcEngine.h header is <code class="brush:cpp">
+ExprEnv</code>&nbsp;(expression environment).&nbsp;It starts with an enumeration of several&nbsp;flags.</p>
+<div><div id="highlighter_795625" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">enum</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kMayEvaluateOnServer&nbsp;&nbsp;&nbsp; = 0x00000001,&nbsp;&nbsp; </code><code class="cpp comments">// If this flag is not set then calcs containing the function will not be</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// evaluated on host as part of a find operation on an unstored calculation</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// field. Instead the client will be doing all the evaluations of calculations</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// to create the found set. If this flag is set then the plug-in must also</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// be loaded on the host.</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayCalcFields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00000100,&nbsp;&nbsp; </code><code class="cpp comments">// Calculated fields</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayAutoEnter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00000200,&nbsp;&nbsp; </code><code class="cpp comments">// Auto enter calculation</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayValidation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00000400,&nbsp;&nbsp; </code><code class="cpp comments">// Validation by calculation</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayCustomFunctions = 0x00000800,&nbsp;&nbsp; </code><code class="cpp comments">// Custom function definition</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayPrivileges&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00001000,&nbsp;&nbsp; </code><code class="cpp comments">// Row level access calculations</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayInFuture1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00002000,&nbsp;&nbsp; </code><code class="cpp comments">// As yet undefined calculation dialog</code></div><div class="line number14 index13 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayInFuture2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00004000,&nbsp;&nbsp; </code><code class="cpp comments">// As yet undefined calculation dialog</code></div><div class="line number15 index14 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayGeneric&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0x00008000,&nbsp;&nbsp; </code><code class="cpp comments">// Dialog used by scripting and replace</code></div><div class="line number16 index15 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">kDisplayInAllDialogs&nbsp;&nbsp;&nbsp; = 0x0000FF00</code></div><div class="line number17 index16 alt2"><code class="cpp plain">};</code></div></div></td></tr></tbody></table></div></div>
+<p>The values of this Function Flag enumeration can be passed to 
+Filemaker when you register the external function of your plug-in. The <code class="brush:cpp">
+kMayEvaluateOnServer</code>&nbsp;flag specifies that a server can call 
+the function with this flag set. Plug-in functions are only called by 
+the server when&nbsp;doing schema updates and during find requests on 
+unstored calculation fields. If you external function contains anything 
+the server environment cannot handle, you should not set&nbsp;&nbsp;this
+ flag.</p>
+<p>The other flags are there to tell Filemaker where your plug-in's function should be available. The <code class="brush:cpp">
+kDisplayCalcFields</code> will make sure your function shows up in the "Specify Calculation" dialog when you create or modify a calculation field; the <code class="brush:cpp">
+kDisplayAutoEnter</code>&nbsp;flag will make sure a user can use your 
+function when&nbsp;modifying/creating an auto-enter by calculation 
+option of a field; etc. The <code class="brush:cpp">
+kDisplayInAllDialogs</code>&nbsp;ensures the user can use the function in all the possible "Specify Calculation" dialogs.</p>
+<p>After the enumeration we find five function. The first of these is <code class="brush:cpp">
+Evaluate</code>.</p>
+<div><div id="highlighter_281074" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode Evaluate ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;expression, Data &amp;result ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>This method asks Filemaker to do&nbsp;evaluate (perform)&nbsp;a 
+calculation&nbsp;which you pass as&nbsp;the first parameter. The result 
+of this calculation is put into the second parameter, a <code class="brush:cpp">
+Data</code> object. Any calculation you would normally enter in a calculation dialog can be provided in the <code class="brush:cpp">
+Text</code> object. For example:</p>
+<div><div id="highlighter_615765" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::TextAutoPtr TAP;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::DataAutoPtr DAP;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">TAP-&gt;Assign(</code><code class="cpp string">"Get(FileName)"</code><code class="cpp plain">);</code></div><div class="line number4 index3 alt1"><code class="cpp plain">environment.Evaluate(*TAP,*DAP);</code></div><div class="line number5 index4 alt2"><code class="cpp plain">TAP-&gt;SetText(DAP-&gt;GetAsText());</code></div><div class="line number6 index5 alt1"><code class="cpp comments">//now the Text object has the filename of the database calling your function</code></div></div></td></tr></tbody></table></div></div>
+<p>The&nbsp;next two methods of the <code class="brush:cpp">
+ExprEnv</code> class actually accomplish the same thing, they execute an SQL command.</p>
+<div><div id="highlighter_790753" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">if</code> <code class="cpp plain">!</code><code class="cpp keyword bold">defined</code><code class="cpp plain">(FMX_64BIT_PLUGIN_API)</code></div><div class="line number2 index1 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">DEPRECATED </code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode ExecuteSQL ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;expression, Data &amp;result, uint16 colSep, uint16 rowSep ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">endif</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">inline</code> <code class="cpp plain">errcode ExecuteFileSQL ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;expression, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;filename, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect &amp;parameters, RowVect&amp; result ) </code><code class="cpp keyword bold">const</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+<p>The first, <code class="brush:cpp">
+ExecuteSQL</code> is not compiled when you are building a 64-bit plug-in to be used with a 64-bit Web Publishing application. Also, it is marked <code class="brush:cpp">
+DEPRECATED</code> when you do not want to compile a 64-bit plug-in. This macro is defined at the beginning of the FMXCalcEngine.h header.</p>
+<div><div id="highlighter_688766" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">if</code> <code class="cpp keyword bold">defined</code><code class="cpp plain">(__GNUC__)</code></div><div class="line number2 index1 alt1"><code class="cpp plain">#</code><code class="cpp keyword bold">define</code> <code class="cpp plain">DEPRECATED __attribute__((</code><code class="cpp keyword bold">deprecated</code><code class="cpp plain">))</code></div><div class="line number3 index2 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">elif</code> <code class="cpp keyword bold">defined</code><code class="cpp plain">(_MSC_VER)</code></div><div class="line number4 index3 alt1"><code class="cpp plain">#</code><code class="cpp keyword bold">define</code> <code class="cpp plain">DEPRECATED </code><code class="cpp keyword bold">__declspec</code><code class="cpp plain">(</code><code class="cpp keyword bold">deprecated</code><code class="cpp plain">)</code></div><div class="line number5 index4 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">else</code></div><div class="line number6 index5 alt1"><code class="cpp plain">#</code><code class="cpp keyword bold">define</code> <code class="cpp plain">DEPRECATED</code></div><div class="line number7 index6 alt2"><code class="cpp plain">#</code><code class="cpp keyword bold">endif</code></div></div></td></tr></tbody></table></div></div>
+<p>Using a GCC-compiler&nbsp;the macro is edfined as <code class="brush:cpp">
+__attribute__((deprecated))</code>. When you use the Visual C++-compiler, it is defined as <code class="brush:cpp">
+__declspec(deprecated)</code>. In both cases, when the compiler 
+encounteres functions with this macro, it will issue a warning that this
+ function is being used although it is deprecated. (Visual 
+C++-compilers, for example,&nbsp;will issue the warning 
+"'fmx::ExprEnv::ExecuteSQL': was declared deprecated".) This means that 
+the use of this function is not recommended by the Filemaker 12 SDK 
+makers. The reason is that Filemaker Pro 12.0 introduced a calculation 
+called ExecuteSQL. It does exactly what method <code class="brush:cpp">
+ExecuteSQL</code> does. There is, therefore, no need to use it with 
+Filemaker 12 databases. To Filemaker 11 users, however, this function is
+ not available, and using method <code class="brush:cpp">ExecuteSQL</code> in a plug-in does make sense.</p>
+<p>It is a left-over of earlier practice and the method should now be replaced by <code class="brush:cpp">
+ExecuteFileSQL</code>. Still, we will discuss how the "old" version is used. It takes as its first argument a <code class="brush:cpp">
+Text</code> which is the SQL statement you want to execute in Filemaker. The second argument is the <code class="brush:cpp">
+Data</code> object that&nbsp;is always&nbsp;passed to your plug-in's 
+external function. This is what the result is set to. The third and 
+fourth arguments are unicode characters denoting the column seperator 
+and row seperator used in the result. The result of a query is one text 
+string, so if a query of&nbsp;mutiple columns and rows returns more than
+ one result, these seperators are used. If you do not need them, you can
+ pass 0x0000 to them.</p>
+<p>The following example illustrates the way you can create a new record
+ in a table called SampleTable and fill the value of one of its fields, 
+SampleField, with a text string.</p>
+<div><div id="highlighter_842164" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">fmx::DataAutoPtr DAP;</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::TextAutoPtr TAP;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">fmx::ExprEnvAutoPtr EAP;</code></div><div class="line number4 index3 alt1"><code class="cpp plain">FMX_SetToCurrentEnv(EAP.get());</code></div><div class="line number5 index4 alt2"><code class="cpp plain">TAP-&gt;Assign(</code><code class="cpp string">"INSERT INTO \"SampleTable\"(\"SampleField\") VALUES ('Hello World!')"</code><code class="cpp plain">);</code></div><div class="line number6 index5 alt1"><code class="cpp plain">fmx::errcode Err = EAP-&gt;ExecuteSQL(*TAP,*DAP,0x0000,0x0000);</code></div></div></td></tr></tbody></table></div></div>
+<p>Note that this example does not return any values into Filemaker using the <code class="brush:cpp">
+result</code> object. The method does return an error code, which should
+ be 0 if nothing out of the ordinary has happened. (Most of the 
+times&nbsp;that you make a mistake, however, the Filemaker application 
+stops working.) When you perform a query, the result is put in the <code class="brush:cpp">
+Data</code> object. In that case, it is mandatory to use the <code class="brush:cpp">
+Data</code> object passed to your external function, if you need the 
+user of the external function to see the result. Otherwise you can just 
+use a new <code class="brush:cpp">Data</code> object and look at the result in you plug-in.</p>
+<div><div id="highlighter_688511" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp plain">FMX_PROC(fmx::errcode) AnExternalFunction ( </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">ExprEnv&amp; env, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">DataVect&amp; parms, Data&amp; result )</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">fmx::TextAutoPtr TAP;</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">TAP-&gt;Assign(</code><code class="cpp string">"SELECT * FROM \"SampleTable\""</code><code class="cpp plain">);</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">fmx::errcode Err = EAP-&gt;ExecuteSQL(env, result, 0x002C, 0x000D);</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">return</code> <code class="cpp plain">0x0000;</code></div><div class="line number7 index6 alt2"><code class="cpp plain">} </code></div></div></td></tr></tbody></table></div></div>
+<p>Now the user&nbsp;has acces to all the values in table SampleTable. 
+The values in the columns are seperated by a comma (unicode value 
+U+002c) and the rows are separated by a carriage return (U+000d).</p>
+<p>There is a drawback to using the <code class="brush:cpp">
+ExecuteSQL</code> method. That is, the CREATE, DROP, and ALTER commands 
+(used to create or delete tables, or to alter columns in a table) cannot
+ be performed regularly. (These commands are part of the Data Definition
+ Language part of SQL.) Your plug-in has to wait for idle time before 
+these can be executed, otherwise FIlemaker will hang. This means you 
+have to wait for Filemaker to call your plug-in's <code class="brush:cpp">
+FMExternCallProc</code> function&nbsp;with <code class="brush:cpp">
+whichCall</code> value&nbsp;<code class="cpp plain">kFMXT_Idle</code>, whilst the <code class="brush:cpp">
+parm1</code> value is at least not <code class="cpp plain">kFMXT_Unsafe</code>.</p>
+<p>The <code class="brush:cpp">
+ExecuteSQL</code> method can use FileMaker_Tables and FileMaker_Fields 
+to query all tables and all fields. Using "SELECT * FROM 
+Filemaker_Tables" will return a list of all table occurences (the 
+TableName), including their TableID, BaseTableName, BaseFileName, and 
+ModCount (number of times modified). The Filemaker_Fields can be used to
+ get a list of fields information. Using "SELECT * FROM 
+Filemaker_Fields" gives you a list of all field that contains TableName,
+ FieldName, FieldType (the SQL data type, not the FileMaker data type), 
+FieldID, FieldClass (Normal, Summary, Calculated), FieldReps, 
+and&nbsp;ModCount. Using "SELECT FieldName FROM Filemaker_Fields" simply
+ returns a list of all fields in the database.</p>
+<p>A discussion of all the SQL possibilities of the <code class="brush:cpp">ExecuteSQL</code>
+ method is beyond the scope of this tutorial. A tutorial on&nbsp;the 
+commands used by the ExecuteSQL function introduced in Filemaker 
+12&nbsp; can be found <a href="http://www.filemakerhacks.com/wp-content/uploads/2012/10/The-Missing-FM-12-ExecuteSQL-Reference.pdf">here</a>.
+ Although this deals with&nbsp;Filemaker 12's internal ExecuteSQL 
+function, which only seems to support the SELECT command, it is useful 
+for an overview of what can be done with queries and most of it should 
+be applicable to the plug-in method.</p>
+<p>The <code class="brush:cpp">
+ExecuteFileSQL</code> method was designated in the Filemaker 11 plug-in 
+SDK as "Experimental SQL interface: use with caution". With the advent 
+of the Filemaker 12 plug-in SDK, however, this function this is not the 
+case anymore. This method now replaces the <code class="brush:cpp">
+ExecuteSQL</code> method.</p>
+<p>The first parameter of the<code class="brush:cpp">ExecuteFileSQL</code> method is the&nbsp;same SQL string you would pass to <code class="brush:cpp">
+ExecuteSQL</code>. The second is a new paramter, to which you can pass 
+a&nbsp;target Filename, or an empty&nbsp;string if you want to target 
+the calling file.&nbsp;The third parameter is a <code class="brush:cpp">
+DataVect</code> object called <code class="brush:cpp">
+parameters</code>. The <code class="brush:cpp">
+Data</code> objects&nbsp;(parameters) replace any question mark ("?") in
+ the SQL string, in the order they appear in this SQL string. The last 
+parameter is a <code class="brush:cpp">
+RowVect</code>, and it contains the result of a query. When your query result in multiple rows (records)&nbsp;being found, the&nbsp;<code class="brush:cpp">RowVect</code>&nbsp;contains multiple <code class="brush:cpp">
+DataVect</code> objects, each representing one row.&nbsp;If the query finds multiple columns (fields), each <code class="brush:cpp">
+DataVect</code> object contains multiple <code class="brush:cpp">
+Data</code> object, each representing the values of one of the fields of a row. The <code class="brush:cpp">
+RowVect</code> can thus contain one whole table split into columns as&nbsp;<code class="brush:cpp">Data</code> objects and rows as <code class="brush:cpp">
+DataVect</code> objects.</p>
+<p>To illustrate the <code class="brush:cpp">
+ExecuteFileSQL</code> method and the <code class="brush:cpp">
+parameters</code> argument, here is an example of an SQL query that 
+finds&nbsp;certain records in table SampleTable depending on the values 
+in SampleField:</p>
+<p>SELECT&nbsp;SampleField FROM SampleTable<br>WHERE SampleField<br>BETWEEN&nbsp;? AND ?</p>
+<p>Now you can fill a <code class="brush:cpp">
+DataVect</code> object with two <code class="brush:cpp">
+Data</code> objects that represent the two extremes of the range you 
+need to find. For example, if you have a tabel with only one (number) 
+field called SampleField and you have ten records with values 1 to 10, 
+you can add numbers 3 and 7&nbsp;to a <code class="brush:cpp">DataVect</code> object and pass those as parameters. the SELECT command will then return a <code class="brush:cpp">
+RowVect</code>&nbsp;object with five <code class="brush:cpp">
+DataVect</code> objects, each containing one <code class="brush:cpp">
+Data</code> object that has a number in it.</p>
+<div><div id="highlighter_409968" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp color1 bold">int</code> <code class="cpp plain">Results[5];</code></div><div class="line number2 index1 alt1"><code class="cpp plain">fmx::TextAutoPtr TAP, TAPEmpty;</code></div><div class="line number3 index2 alt2"><code class="cpp plain">fmx::DataAutoPtr DAP1, DAP2;</code></div><div class="line number4 index3 alt1"><code class="cpp plain">fmx::DataVectAutoPtr DVAP;</code></div><div class="line number5 index4 alt2"><code class="cpp plain">fmx::RowVectAutoPtr RVAP;</code></div><div class="line number6 index5 alt1"><code class="cpp plain">fmx::FixPtAutoPtr FAP1(3), FAP2(7);</code></div><div class="line number7 index6 alt2"><code class="cpp plain">fmx::ExprEnvAutoPtr EAP;</code></div><div class="line number8 index7 alt1"><code class="cpp plain">FMX_SetToCurrentEnv(EAP.get());</code></div><div class="line number9 index8 alt2"><code class="cpp plain">DAP1-&gt;SetAsNumber(*FAP1);</code></div><div class="line number10 index9 alt1"><code class="cpp plain">DAP2-&gt;SetAsNumber(*FAP2);</code></div><div class="line number11 index10 alt2"><code class="cpp plain">DVAP-&gt;PushBack(*DAP1);</code></div><div class="line number12 index11 alt1"><code class="cpp plain">DVAP-&gt;PushBack(*DAP2);</code></div><div class="line number13 index12 alt2"><code class="cpp plain">TAP-&gt;Assign(</code><code class="cpp string">"SELECT \"SampleField\" FROM \"SampleTable\" WHERE \"SampleField\" BETWEEN ? AND ?"</code><code class="cpp plain">);</code></div><div class="line number14 index13 alt1"><code class="cpp plain">fmx::errcode Err = EAP-&gt;ExecuteFileSQL(*TAP,*TAPEmpty,*DVAP,*RVAP);</code></div><div class="line number15 index14 alt2"><code class="cpp keyword bold">for</code><code class="cpp plain">(</code><code class="cpp color1 bold">int</code> <code class="cpp plain">i = 0; i &lt; RVAP-&gt;Size(); i++)</code></div><div class="line number16 index15 alt1"><code class="cpp plain">{</code></div><div class="line number17 index16 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Results[i] = RVAP-&gt;At(i).AtAsNumber(0).AsLong();</code></div><div class="line number18 index17 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>The resulting&nbsp;<code class="brush:cpp">int</code> array&nbsp;now 
+contains number 3 to 7, which are the values from the third to seventh 
+row of the SampleField. Note that using double quotation marks around 
+table names and field names is not mandatory, but certainly good 
+practice when working with variable names. A user's database could 
+contain tables or fileds with names atarting with an underscore and 
+these are not permitted in the SQL expressions. Another thing of note is
+ that you can use square brackets to get a repetition of a field. For 
+example, the second repetition of the field in the last SQL expression 
+can be retrieved thus: "SELECT \"SampleField\"[2] FROM \"SampleTable\" 
+WHERE \"SampleField\"[2] BETWEEN ? AND ?";</p>
+<p>The <code class="brush:cpp">
+ExprEnv
+</code>contains two other methods, both of them are <code class="brush:cpp">
+static</code>, which means they can be called without an <code class="brush:cpp">
+ExprEnv</code>&nbsp;object. These are&nbsp;<code class="brush:cpp">RegisterExternalFunction</code> and&nbsp;<code class="brush:cpp">UnRegisterExternalFunction</code>.
+ The first is used to send Filemaker a function to add to the list of 
+external functions that can be used in calculations by users of a 
+database. The second removes a function from the external functions a 
+Filemaker user can use.</p>
+<p><code class="brush:cpp">RegisterExternalFunction</code>&nbsp;takes a long list of arguments; eight to be precise.</p>
+<div><div id="highlighter_938759" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">static</code> <code class="cpp plain">errcode RegisterExternalFunction ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">QuadChar &amp;pluginId, </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId, </code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;functionName,</code></div><div class="line number2 index1 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">const</code> <code class="cpp plain">Text &amp;functionPrototype, </code><code class="cpp color1 bold">short</code> <code class="cpp plain">minArgs, </code><code class="cpp color1 bold">short</code> <code class="cpp plain">maxArgs, uint32 typeFlags, ExtPluginType funcPtr );</code></div></div></td></tr></tbody></table></div></div>
+<p>A lengthy comment in the SDK header explains these parameters as follows.</p>
+<blockquote>
+<p>Dynamic Registration of Plug-in Functions</p>
+<p>RegisterExternalFunction enables the plug-in to <span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">register</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> a function with the application, </span></span>so that function appears in the calculation dialog in the application.</p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"pluginId"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> should be the unique four-digit identifier </span></span><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">for</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> your plug-in that you use </span></span><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">for</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> the </span></span><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"options"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> string.</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"functionId"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the unique cookie that you can use to represent which function was called, it will be passed back to the</span></span> registered function as the first parameter (see the parameter of the same name in <span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"ExtPluginType"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2">).</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"functionName"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the name of the function as it should appear in the calculation formula.</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"functionPrototype"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the suggested syntax that will appear in the list of functions in the calculation dialog.</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"minArgs"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the number of required parameters </span></span><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">for</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> the function.&nbsp; 0 is the smallest valid value.</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"maxArgs"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the maximum number of parameters that the user should be able to specify in the calculation dialog</span></span> and still have correct syntax usage <span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">for</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> the function.&nbsp; Use -1 to allow a variable number of parameters up to the</span></span>&nbsp;number supported by calculation formulas in the application.</p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"typeFlags"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is options </span></span><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">for</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> the function.&nbsp; Currently only represents </span></span><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">where</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> the function will appear in the various kinds</span></span> of calculation dialogs in the application.&nbsp; See the <span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff"><span face="Consolas" size="2" color="#0000ff">enum</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> above.</span></span></p>
+<p><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515"><span face="Consolas" size="2" color="#a31515">"funcPtr"</span></span></span><span face="Consolas" size="2"><span face="Consolas" size="2"> is the pointer to the function that must match the signature defined by ExtPluginType.</span></span></p>
+</blockquote>
+<p>&nbsp;The <code class="brush:cpp">
+functionName</code> and <code class="brush:cpp">
+functionPrototype</code> differ in that the first should be used&nbsp;in
+ calculations and the second is the version appearing in the function 
+drop-down list. The function name should be the same in both cases, but 
+the prototype should include the parameters to let the user know what to
+ feed the function. The user can enter any number of arguments between <code class="brush:cpp">
+minArgs</code>&nbsp;and <code class="brush:cpp">
+maxArgs</code>. All of them will be passed as the <code class="brush:cpp">
+DataVect parms</code> to your plug-in's external function. You can not 
+control the datatypes passed to your plug-in's function, but you can 
+retrieve them in a certain dataype by using the <code class="brush:cpp">
+AtAs</code> methods of the <code class="brush:cpp">
+DataVect</code> class. The <code class="brush:cpp">
+typeFlags</code> can be any of the enumeration, including <code class="brush:cpp">
+kMayEvaulteOnServer</code>. You can use the bitwise OR operator ("|") to pass multiple values. The <code class="brush:cpp">
+functPtr</code>, finally, should be the exact name of the external 
+function as defined in your plug-in. This can&nbsp;be 
+different&nbsp;from the one used in <code class="brush:cpp">functionName</code> and <code class="brush:cpp">functionPrototype</code>.</p>
+<p>The last method of the <code class="brush:cpp">
+ExprEnv</code> class is <code class="brush:cpp">
+UnregisterExternalFunction</code>. is removes an external function from 
+all the dialogs in Filemaker. You need to pass it the plug-in ID and the
+ ID of the function you need to remove.</p>
+<div><div id="highlighter_358034" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">inline</code> <code class="cpp keyword bold">static</code> <code class="cpp plain">errcode UnRegisterExternalFunction ( </code><code class="cpp keyword bold">const</code> <code class="cpp plain">QuadChar &amp;pluginId, </code><code class="cpp color1 bold">short</code> <code class="cpp plain">functionId );</code></div></div></td></tr></tbody></table></div></div>
+<p>You should call the function for every external function when your plug-in receives the <code class="brush:cpp">
+kFMXT_Shutdown</code> message.</p>
+<p>And that's all you can do with the plug-in headers. Hope you have 
+enjoyed reading through these pages and feel free to contact me for any 
+improvements.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	
+</div>
+
+						</div>
+					
+								<div class="clr"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<p style="text-align:center;">
+ 	Van der Linden Cultural Services, Powered by <a href="http://joomla.org/" class="sgfooter" target="_blank">Joomla!</a>
+
+	
+
+	
+	
+
+</p>
+		</div>
+		</div>
+	</div>
+	<div id="footergrad">&nbsp;</div>
+
+<div style="padding: 0px; border: medium none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" href="javascript:;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><div style="padding: 0px; border: medium none; margin: 0px; visibility: hidden;" class="highslide-viewport highslide-viewport-size"></div><table style="padding: 0px; border: medium none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;" cellspacing="0"><tbody style="padding: 0px; border: medium none; margin: 0px;"><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -80px; height: 20px; width: 20px;"></td><td class="drop-shadow highslide-outline" style="padding: 0px; border: medium none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: medium none; margin: 0px; height: auto;"><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: medium none; margin: 0px; line-height: 0; font-size: 0px; background: transparent url(&quot;http://culturalservices.nl/plugins/content/highslide/graphics/outlines/drop-shadow.png&quot;) repeat scroll -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table></div></body></html>

@@ -1,0 +1,17 @@
+Output/x86/FMPluginDebug.ilk
+*.pdb
+Temp/Debug/cl.command.1.tlog
+*.tlog
+Temp/Debug/FMExecutePython.obj
+*.lastbuildstate
+Temp/Debug/FMPluginDebug.Build.CppClean.log
+*.exp
+Temp/Debug/FMPluginDebug.lib
+*.obj
+Temp/Debug/PlugInTemplate.log
+*.cache
+Temp/Debug/LEAF.log
+*.res
+Temp/Debug/FMPluginDebug_manifest.rc
+*.manifest
+*.idb

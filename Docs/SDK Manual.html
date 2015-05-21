@@ -1,0 +1,308 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>24 Plug-In Template Manual</title>
+  <STYLE TYPE="text/css" MEDIA=screen>
+  <!--
+    h1 { font-size: 25px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; line-height: 32px }
+    h2 { font-size: 22px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; margin-top: 24px; margin-bottom: 4px }
+    h3 { font-size: 18px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; margin-top: 20px; margin-bottom: 2px }
+    h4 { font-size: 16px; font-family: "Lucida Grande", Arial, sans-serif; text-decoration: underline; font-weight: 500; margin-top: 10px; margin-bottom: 0px; }
+    .name { color: #8800AA }
+    .source_file { font-weight: bold; }
+    .xcode_macro { color: #996633; }
+    .xcode_string { color: #E61E23; }
+    .conf_title { font-weight: bold; margin-left: 30px }
+    .path { font-style: italic }
+    .menu_desc { font-weight: bold }
+    .problem_title { font-weight: bold }
+    .table_title { font-family: "Geneva", Arial }
+    .copy_text { font-size: small }
+    p { font-family: "Geneva", Arial; margin-top: 0px; margin-bottom: 8px; }
+    li { font-family: "Geneva", Arial }
+  -->
+  </STYLE>
+</head>    
+
+<body bgcolor="#FFFFFF">
+  
+  <h1>24 Plug-In Template Manual</h1>
+
+  <p>This manual describes how to use <span class="name">24U Plug-In Template</span> to develop FileMaker Pro plug-ins. Please read <a href="ReadMe.html">Readme file</a> to learn how to install the template and how to create a testing build of the unmodified template. This tutorial describes how to create a new functionality in the template .</p>
+  
+  <h2>Steps how to create your own plug-in</h2>
+
+  <h3>1. Understand the Template structure</h3>
+
+  <p><span class="name">24 Plug-In Template</span> (formerly named 24U FM Template) is template project for developing third-party FileMaker external function plug-ins. It consists of these directories:</p>
+
+  <h4>Output</h4>
+  <p>Directory for result binary files. Builds of the plug-in are stored there.</p>
+
+  <h4>Projects</h4>
+  <p>Project files for XCode, Visual Studio .NET 2003 and Visual Studio 2010 development environments.</p>
+
+  <h4>Sources</h4>
+  <p>Source files for the future plug-in. The function of each file is described in the comments inside the file. Source files of the plug-in itself should be placed to this directory.</p>
+
+  <h4>Support</h4>
+  <p>Source files which serves as a support for main source files of the plug-in. Support libraries, headers and sources which will not be modified should be placed here.</p>
+
+  <h4>Temp</h4>
+  <p>Temporary files, build logs are placed here.</p>
+
+  <h3>2. Prepare your project</h3>
+
+  <p>Make a copy of the template folder and name the copy after your new
+    plug-in. Make sure you have the latest FileMaker Plug-In SDK in the
+    Support folder. <span class="name">24U Plug-In Template</span> is publicly available with FMPlugInSDK
+    folder containing FileMaker Plug-In SDK for FileMaker Pro 12. If you want to develop the plug-in for another version
+    of FileMaker Pro copy corresponding SDK to the Support folder.</p>
+
+  <p>The actual FMPlugInSDK can be downloaded from <a href="http://www.filemaker.com/support/technologies/?nav=support-technologies">FileMaker Technologies Support page</a>.</p>
+
+  <p>When you are ready, open the project file matching your development
+    environment and try to build all targets to make sure you have all
+    necessary includes and libraries in place.</p>
+    
+  <h4>Visual Studio Note</h4>
+  <p>Open the solution file with the "sln" extension, not the "vcproj"
+    file. In Visual Studio's terminology, you will be working with
+    a solution that consists of a single project - the plug-in.</p>
+
+  <h4>XCode Note</h4>
+  <p>The project file is prepared for universal binary builds. Project is configured to
+    use Mac OS X 10.6 SDK for Intel builds. 10.6 SDK must be present in /Developer/SDKs folder to
+    successfully build the plug-in. It can be found on XCode installation disk if
+    missing.</p>
+
+  <h3>3. Set up the basics</h3>
+  
+  <p>Begin the development of a new plug-in by opening the "FMTConfig.h"
+    header file and setting up the constants accordingly. This file is
+    divided into 4 sections. Always pay attention to the first section -
+    Shared constants. Actually, the most important constants are
+    <span class="xcode_macro">PLUGIN_ID_STRING</span>, <span class="xcode_macro">WANT_PREFERENCES</span>, <span class="xcode_macro">WANT_IDLE</span>, <span class="xcode_macro">PLUGIN_NAME</span>, and
+    <span class="xcode_macro">PLUGIN_INFO</span>. They are used to generate mandatory resources and code
+    FileMaker applications use to recognize the plug-in and to display
+    it correctly in the calculation and preferences dialogs.</p>
+
+  <p>The <span class="xcode_macro">PLUGIN_ID_STRING</span> constant is a 4 characters long ID of your plug-in.
+    According to the FileMaker's Developer Guide: The ID must be unique for
+    each plug-in and must not begin with "F", "FM", or "Web" as these IDs
+    are reserved by FileMaker, Inc. For the Mac OS X, it used to be
+    recommended that you set the creator type of the plug-in to this
+    same value. Unfortunately, Mac OS X currently does not look for icons
+    in plug-ins, so we recommend you leave the HFS creator set to '????',
+    so that Mac OS X deducts the correct icon from the plug-in's extension.</p>
+    
+  <p>To make sure you will use a unique ID, you should register the ID as a
+    creator code at the Apple Developer Technical Support web site even if
+    you won't be creating a Mac OS X version of your plug-in. To register
+    IDs, go to the support pages on the Apple Computer web site at
+    <a href="http://developer.apple.com/">Apple Developer Connection</a> and look for a link to Creator Type or
+    Data Type Registration.</p>
+    
+  <p>The <span class="xcode_macro">WANT_PREFERENCES</span> constant defines if your plug-in should have the
+    "Configure..." button enabled in the plug-ins panel of the FileMaker
+    Application Preferences dialog box. If you set this constant to 1, the
+    button will be enabled and after clicking on it, your Preferences()
+    function in the "FMPluginHandlers.cpp" file will get called.</p>
+    
+  <p>Set the <span class="xcode_macro">WANT_IDLE</span> constant to 1 if you want FileMaker to call your
+    plug-in periodically in idle time to let it do any idle processing. If
+    you set this constant to 1, your idle functions in the
+    "FMPluginHandlers.cpp" file will be called periodically whenever the
+    FileMaker application has nothing else to do. If you don't need any
+    idle processing, set this constant to 0 so that you don't steal
+    processing time from FileMaker.</p>
+    
+  <p>Define the plug-in's name and description in the <span class="xcode_macro">PLUGIN_NAME</span> and
+    <span class="xcode_macro">PLUGIN_INFO</span> constants. These will be used, besides other places, by
+    FileMaker in its Application Preferences dialog box and in the
+    calculation dialog's list of external functions. Also define the
+    <span class="xcode_macro">PLUGIN_VERSION</span> constant to match the version of your plug-in, so that it
+    is possible to check the plug-in's version from within a FileMaker Pro
+    script.</p>
+    
+  <p>The remaining constants are used mainly to define the Mac OS X
+    identification information and the Windows file properties list. The
+    constant names and their sample values should be self-descriptive so it
+    should be quite simple to set them properly.</p>
+    
+  <h3>4. Add new functions</h3>
+
+  <p>With the <span class="name">24U Plug-In Template</span>, adding new functions to your plug-in is quite
+    simple. To define a new function, open the "FMTConfig.h" header file,
+    scroll to the "Function definitions" section, and uncomment the first
+    commented block of #defines. Then change the four macros according to
+    the function you are going to create.</p>
+
+  <p>There are 10 predefined function definition blocks in the FMTConfig.h
+    file, which should be enough for most plug-ins. By default, there is one
+    function already defined for your convenience - the Version function.</p>
+    
+  <p>Let's say you want to add a second function named "MyFunction" to your
+    plug-in. This function is going to take two parameters, the first one
+    being required, and the second one optional. To define this function as
+    a second function of your plug-in, available for both client and
+    server-side calculations, uncomment the second definition block and
+    modify it to look like this:</p>
+    
+  <pre class="xcode_macro">
+    #define FUNCTION_2_C_NAME     MyFunction
+    #define FUNCTION_2_FLAGS      fmx::ExprEnv::kMayEvaluateOnServer | \
+                                  fmx::ExprEnv::kDisplayInAllDialogs
+    #define FUNCTION_2_PARAMS     kAtLeast_1_Parameter, kAtWorst_2_Parameters
+    #define FUNCTION_2_PROTOTYPE  "MyFunction( param1; { param2 } )"
+  </pre>
+
+  <p>After this modification, you should add source code for the function
+    "MyFunction" to the project so that it can be registered by the
+    initialization handler in the "FMTemplate.cpp" file. Your function
+    should have the following prototype:</p>
+
+  <pre>
+    FMX_PROC(fmx::errcode) MyFunction(       short          funcId,
+                                       const fmx::ExprEnv&  environment,
+                                       const fmx::DataVect& dataVect,
+                                             fmx::Data&     result )
+  </pre>
+
+  <p>We suggest that you write the function code in a new file named
+    "MyFunction.cpp" after the function. This way you will keep the project
+    clean and all external functions easily accessible. Save the new file
+    into the "Source" folder, and add it to all targets of the project you
+    are using.</p>
+
+  <p>You don't have to create header files with your external function
+    prototypes to include into the "FMTemplate.cpp" file. All external
+    functions will get declared automatically, using the definitions from
+    the "FMTConfig.h" header file. All you need to edit are the files you
+    create on your own and the predefined files in the "Source" folder.</p>
+    
+  <h3>5. Edit the startup, shutdown, preferences, and idle routines</h3>
+
+  <p>Code for these four kinds of optional routines can be found in the
+    "FMPluginHandlers.cpp" file. Feel free to change these routines to fit
+    your needs. Follow the inline instructions in the file when editing
+    these functions, and don't forget to update the "FMTConfig.h" header
+    file accordingly if you use the Preferences or Idle routines.</p>
+
+  <h3>6. Test and debug</h3>
+
+  <p>To test and debug your new plug-in, you should start by building
+    a special debug version of it. Follow the instructions for your
+    development environment below:</p>
+
+  <h4>XCode</h4>
+  <p>Simply click on the Run button. The project is adjusted for building universal binary with two architectures.</p>
+
+  <h4>Visual Studio 2003</h4>
+  <p>Switch the solution's configuration to "Debug", and build the
+    solution.</p>
+    
+  <h4>Visual Studio 2010</h4>
+  <p>Switch the solution's configuration to "Debug" x64 or Win32, and build the
+    solution.</p>
+  <p>The 64-bit built plug-in is only compatible with 64-bit FileMaker process which is the Custom Web Publishing running on 64-bit platform. For more information about testing 64-bit plug-in via Custom Web Publishing read <a href="./Testing64bitPlug-In.html">How to test 64-bit plug-in</a>. For other purposes use the 32-bit plug-in.</p>
+
+  <p>By default, the debug version of your plug-in will be built into the
+    Output folder and named "FMPluginDebug.fmplugin" for Mac OS X and
+    "FMPluginDebug.fmx" for Windows. However, if you are familiar with your
+    development environment, you can have it built directly into the
+    FileMaker's Extensions folder for easier debugging. Just don't forget
+    to remove the debug version when you put the final version to the
+    Extensions folder, otherwise the two copies of the same plug-in will
+    interfere.</p>
+    
+  <h4>Finder Note</h4>
+  <p>Do not rename built plug-in in Finder. Binary name can be changed 
+    in development environment.</p>
+
+  <h4>Plug-in name note</h4>
+  <p>Plug-in name should not begin by number (ie. 3DPlugin.fmplugin).
+    If so it will have incorrect behaviour in FileMaker 8.0 on Mac OS X.
+    This is probably a bug in FileMaker.</p>
+
+  <h3>7. Build and release</h3>
+  
+  <p>When you think your plug-in is finished and free of bugs, you can build
+    a release version and start using or distributing it. Build the 
+    "FMPlugin Release" configuration in Visual Studio .NET, or 
+    the "Deployment" build style in XCode.</p>
+
+  <p>The release version of your plug-in will be built into the Output folder
+    and named "FMPlugin.fmplugin" for Mac OS X and "FMPlugin.fmx" for Windows.</p>
+    
+  <h2>Things to never change</h2>
+
+  <p>Do not change the files contained within the "Support" folder unless you
+    are sure you have reached limits of this template and you are
+    experienced enough to change the structure of the template.</p>
+
+  <p>If you want to use other 3rd-party libraries or sample code in your
+    project(s) as standalone code which you are not going to edit, it is a
+    good idea to add them also into the "Support" folder. In general, the
+    "Sources" folder is intended for your own source code, and the "Support"
+    folder for read-only support files provided by other parties.</p>
+
+  <p>Do not remove the PluginVersion function from your plug-in. You may
+    modify the function to be smarter than the predefined one but you should
+    never release a plug-in without a version function. If your plug-in does
+    not have a version function, developers will not be able to check if
+    they are using the right version of your plug-in.</p>
+
+  <p>Once you release your plug-in, never change ID's of your functions. If
+    you want to reorder them you will need to modify the order in which your
+    functions are registered in the initialization function of the
+    "FMTemplate.cpp" file but never change the function ID's as they are
+    stored in FileMaker databases using them. Changing your function ID's
+    would make your plug-in incompatible with its previous version.</p>
+
+  <h2>Development Environments</h2>
+
+  <p><span class="name">24U Plug-In Template</span> contains ready to use projects for two different
+    development environments - Apple XCode and Microsoft Visual Studio versions .NET 2003 and 2010. 
+    Use XCode to build FileMaker plug-ins on Macintosh and Visual Studio
+    to build FileMaker plug-ins on Windows.</p>
+
+  <h2>Apple XCode note</h2>
+
+  <p>Xcode doesn't directly support automatic generation of property list
+    and resource files using definitions from header files and plc
+    template files. To let you minimize work overhead when developing
+    with XCode and still building a Windows plug-in from the same source
+    code, <span class="name">24U Plug-In Template</span> faces this problem using the "Shell Script
+    Build Phase". It executes the script 24u_plist_compiler.sh which does
+    all the work. Note that the user building the plug-in must have the
+    permission to execute this script.</p>
+
+  <h2>Objective-C note</h2>
+
+  <p>Apple Cocoa library is the default way how to create UI on Mac OS X. The 24U Plug-In Template
+    is written in C++ language, Cocoa uses Objective-C language. If you want to use Cocoa in
+    the plug-in you must declare that you need to compile the source files as Objective-C++.
+    This can be done by two ways:</p>
+  <ul>
+    <li>By renaming all *.cpp files to *.mm files. This can be problematic if you want to create a 
+      multiplatform plug-in which should be buildable on Windows. If you create a Mac-only plug-in this is the better way.</li>
+    <li>Set *.cpp files as objective-c++. This can be done by right-clicking to the file 
+      in XCode, choose Get Info, tab General and File Type to sourcecode.cpp.objcpp. 
+      XCode will start to compile these files as objective-c++. All objective-c code should be 
+      separated from C++ code by #ifdef __OBJC__ #endif macros so objective-c code does not interfere with
+      C++ code on Windows.</li>
+  </ul>
+
+  <h2>Getting technical support</h2>
+
+  <p>Neither 24U Software nor FileMaker, Inc. warrants to provide technical support for this product. However, we appreciate any feedback you send to us through our on-line technical support form, and we will try to answer your questions. We are always ready to provide you a developer-level support and custom development services on commercial basis.</p>
+
+  <p>For the latest version of 24U Plug-In Template and to obtaining support visit the 24U Plug-In Template's home page:</p>
+
+  <p><a href="http://www.24uSoftware.com/PlugInTemplate">http://www.24uSoftware.com/PlugInTemplate</a></p>
+
+</body>
+
+</html>
